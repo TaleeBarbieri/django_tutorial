@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<center><h1>About Page</h1></center>
+
+
+<h1>This stays in the block content</h1>
+<p>This is a template</p>
+
+{{ my_text }}, {{ my_number}}       <!-- This will pull the keys from (pages.views) and
+                                    find the about request and return the dictionary in (about_view) -->
+, {{my_list}}
+
+<ul>
+{% for my_sub_item in my_list %}    <!-- This is making a (for loop) for the list (my_list)  -->
+    <li>{{ forloop.counter }} - {{my_sub_item }}</li>
+{% endfor %}
+
+</ul>
+
+{%endblock%}
