@@ -9,6 +9,7 @@ packages = [{include = "django-tutorial"}]
 python = "^3.11"
 django = "^4.2.1"
 pysqlite3 = "^0.5.0"
+django-filter = "^23.2"
 
 
 [build-system]
