@@ -6,9 +6,12 @@ from .models import Product
 
 def product_detail_view(request):
     obj = Product.objects.get(id=1)
+    # context = {
+    #     'name': obj.name,
+    #     'description': obj.description,
+    #     'price': obj.price
+    # }
     context = {
-        'name': obj.name,
-        'description': obj.description,
-        'price': obj.price
+        'object': obj
     }
     return render(request, "products_apps/detail.html", context)
