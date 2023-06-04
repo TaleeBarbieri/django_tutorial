@@ -7,7 +7,7 @@ packages = [{include = ".direnv" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-django = "^4.2.1"
+Django = "^4.2.1"
 pysqlite3 = "^0.5.0"
 
 
